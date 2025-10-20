@@ -56,7 +56,6 @@
     <div class="calculator">
         <input type="text" class="display" id="display" readonly value="0">
         <div class="buttons">
-            <button class="operator" onclick="appendToDisplay('/')">/</button>
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
             <button onclick="appendToDisplay('9')">9</button>
@@ -73,21 +72,10 @@
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="deleteLast()">⌫</button>
             <button class="equals" onclick="calculate()">=</button>
-            
         </div>
     </div>
+    
+    <script src="js.script"></script>
 
-    <script>
-  let result = document.getElementById("display");
-        function appendToDisplay(num){
-            result.value += num;
-        }
-      function clearDisplay(){
-         result.value = 0;
-       }
-      function calculate(){
-        result.value = eval(result.value);
-      }
-    </script>
 </body>
 </html>
